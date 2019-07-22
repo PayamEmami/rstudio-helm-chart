@@ -1,0 +1,12 @@
+{{ if and (not .Values.pvc_exists) .Values.rstudio_pvc }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{.Values.rstudio_pvc}}
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: {{.Values.rstudio_pvc_capacity}} 
+{{ end }}
