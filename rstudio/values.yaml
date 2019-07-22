@@ -2,20 +2,20 @@
 # This is a YAML-formatted file.
 
 # Rstudio deployment
-jupyter_image_registry: "https://index.docker.io/v1/"
-jupyter_image: "payamemami/rstudio"
-jupyter_image_tag: ":latest"
-jupyter_pull_policy: "Always"
-jupyter_internal_port: 8787
-jupyter_external_port: 8787
-jupyter_node_port_exposed: 30712
-jupyter_resource_req_memory: 1G
-jupyter_resource_limits_memory: 4G
-jupyter_resource_req_cpu: 1
-jupyter_resource_limits_cpu: 4
-jupyter_mount_path: "/home"
-jupyter_pvc: "rstudio-volume-claim"
-jupyter_pvc_capacity: "1Gi"
+rstudio_image_registry: "https://index.docker.io/v1/"
+rstudio_image: "payamemami/rstudio"
+rstudio_image_tag: ":latest"
+rstudio_pull_policy: "Always"
+rstudio_internal_port: 8787
+rstudio_external_port: 8787
+rstudio_node_port_exposed: 30712
+rstudio_resource_req_memory: 1G
+rstudio_resource_limits_memory: 4G
+rstudio_resource_req_cpu: 1
+rstudio_resource_limits_cpu: 4
+rstudio_mount_path: "/home"
+rstudio_pvc: "rstudio-volume-claim"
+rstudio_pvc_capacity: "1Gi"
 
 # Ingress
 domain: "mydomain.dev"
