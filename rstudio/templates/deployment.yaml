@@ -69,7 +69,7 @@ spec:
   {{ end }}
   ports:
   - name: http
-    targetPort: 8888
+    targetPort: 8787
     port: {{.Values.rstudio_internal_port}}
     {{ if not .Values.use_ingress }}
     nodePort: {{.Values.rstudio_node_port_exposed}}
